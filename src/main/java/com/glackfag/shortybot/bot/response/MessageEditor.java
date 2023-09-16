@@ -1,6 +1,5 @@
 package com.glackfag.shortybot.bot.response;
 
-import com.glackfag.shortybot.RestClient;
 import com.glackfag.shortybot.bot.Bot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -15,7 +14,7 @@ public class MessageEditor {
     private final Bot bot;
 
     @Autowired
-    public MessageEditor(RestClient restClient, @Lazy Bot bot) {
+    public MessageEditor(@Lazy Bot bot) {
         this.bot = bot;
     }
 

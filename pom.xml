@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.glackfag</groupId>
 	<artifactId>shortybot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>16.9.23</version>
 	<name>Shorty-bot</name>
 	<description>Telegram bot for shorty.su interaction</description>
 	<properties>
@@ -20,7 +20,7 @@
 		<dependency>
 			<groupId>org.telegram</groupId>
 			<artifactId>telegrambots</artifactId>
-			<version>6.7.0</version>
+			<version>6.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

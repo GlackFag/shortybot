@@ -60,12 +60,15 @@ public class ShortyBotApplication {
 
     @Bean
     public InlineKeyboardMarkup menuMarkup() {
-        InlineKeyboardButton newShortening = new InlineKeyboardButton("New shortening");
-        newShortening.setCallbackData(Commands.NEW_SHORTENING);
+        InlineKeyboardButton shorteningForm = new InlineKeyboardButton("New shortening");
+        shorteningForm.setCallbackData(Commands.SHORTENING_FORM);
 
         InlineKeyboardButton showUsersShortenings = new InlineKeyboardButton("My shortenings");
         showUsersShortenings.setCallbackData(Commands.SHOW_USERS_ASSOCIATIONS);
 
-        return new InlineKeyboardMarkup(List.of(List.of(newShortening, showUsersShortenings)));
+        InlineKeyboardButton reportForm = new InlineKeyboardButton("Report");
+        reportForm.setCallbackData(Commands.REPORT_FORM);
+
+        return new InlineKeyboardMarkup(List.of(List.of(shorteningForm), List.of(showUsersShortenings, reportForm)));
     }
 }

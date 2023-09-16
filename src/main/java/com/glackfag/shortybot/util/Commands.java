@@ -1,9 +1,10 @@
 package com.glackfag.shortybot.util;
 
 public interface Commands {
+    String CANCEL = "cancel";
     String START = "/start";
     String MENU = "/menu";
-    String NEW_SHORTENING = "/newShortening";
+    String SHORTENING_FORM = "/shorteningForm";
     String SHOW_USERS_ASSOCIATIONS = "/showUsersAssociations";
-    String SHOW_ASSOCIATION = "/newShowAssociationDestination=";
+    String REPORT_FORM = "/reportForm";
 }
